@@ -52,4 +52,4 @@ This project demonstrates image compression using **Singular Value Decomposition
 			</td>
 	</tr>
 </table>
-# CS103-G1T5
+
