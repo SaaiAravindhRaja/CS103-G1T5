@@ -34,99 +34,6 @@ A comprehensive, professional-grade implementation of image compression using **
 - **Demo Materials**: Comprehensive demo scripts and presentation materials
 - **Academic Documentation**: Complete research report with methodology and results
 
-## 🚀 Quick Start
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/svd-image-compression.git
-   cd svd-image-compression
-   ```
-
-2. **Create and activate a virtual environment:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Launch the Web Application
-
-```bash
-cd webapp
-streamlit run app.py
-```
-
-Open your browser to `http://localhost:8501` to access the interactive interface.
-
-### Run Jupyter Notebooks
-
-```bash
-jupyter notebook notebooks/experiments.ipynb
-```
-
-## 📖 Usage Examples
-
-### Web Application
-
-#### Single Image Compression
-1. Navigate to "Single Image Compression" in the sidebar
-2. Upload an image (PNG, JPG, JPEG supported)
-3. Adjust the k-value slider to control compression level
-4. View real-time quality metrics and side-by-side comparison
-5. Download compressed images and analysis reports
-
-#### Batch Processing
-1. Go to "Batch Processing" page
-2. Upload multiple images (up to 10 recommended)
-3. Configure k-value ranges and processing options
-4. Monitor progress with real-time updates
-5. Export results as CSV or download compressed images as ZIP
-
-#### Comparison Analysis
-1. Visit "Comparison Analysis" page
-2. Upload an image for multi-level analysis
-3. Choose quick comparison or custom k-values
-4. Explore interactive visualizations and statistical analysis
-5. Export comprehensive comparison reports
-
-### Command Line Interface
-
-```python
-from src.compression.svd_compressor import SVDCompressor
-from src.data.image_loader import ImageLoader
-
-# Load and compress an image
-loader = ImageLoader()
-compressor = SVDCompressor()
-
-image = loader.load_image("path/to/image.jpg")
-compressed_image, metadata = compressor.compress_image(image, k=50)
-
-print(f"Compression ratio: {metadata['compression_ratio']:.2f}x")
-print(f"PSNR: {metadata['psnr']:.2f} dB")
-```
-
-### Batch Experiments
-
-```python
-from src.batch.experiment_runner import ExperimentRunner, ExperimentConfig
-
-config = ExperimentConfig(
-    datasets=["portraits", "landscapes", "textures"],
-    k_values=list(range(10, 101, 10)),
-    output_dir="results/experiments"
-)
-
-runner = ExperimentRunner()
-results = runner.run_batch_experiments(config)
-```
-
 ## 📁 Project Structure
 
 ```
@@ -156,34 +63,6 @@ svd-image-compression/
 └── demo/                         # Demo scripts and materials
 ```
 
-## 🔬 Technical Details
-
-### SVD Compression Algorithm
-
-The system implements SVD compression using the mathematical decomposition:
-
-```
-A = UΣV^T
-```
-
-Where for compression with k singular values:
-- **Storage Original**: m × n pixels
-- **Storage Compressed**: mk + k + kn values
-- **Compression Ratio**: mn / (mk + k + kn)
-
-### Quality Metrics
-
-- **PSNR (Peak Signal-to-Noise Ratio)**: Measures reconstruction quality in decibels
-- **SSIM (Structural Similarity Index)**: Evaluates structural similarity (0-1 scale)
-- **MSE (Mean Squared Error)**: Pixel-level difference measurement
-- **Compression Ratio**: Storage reduction factor
-
-### Performance Characteristics
-
-- **Processing Time**: 15-35ms for 256×256 images on standard hardware
-- **Memory Usage**: Optimized for batch processing with memory profiling
-- **Scalability**: Parallel processing support for large datasets
-
 ## 📊 Sample Results
 
 ![Singular Values Analysis](slides/plots/singular_values.png)
@@ -192,30 +71,11 @@ Where for compression with k singular values:
 ![PSNR vs K Analysis](slides/plots/psnr_vs_k.png)
 *Quality vs compression trade-off analysis across different image categories*
 
-## 🧪 Testing
-
-Run the complete test suite:
-
-```bash
-# Unit tests
-python -m pytest tests/unit/ -v
-
-# Integration tests
-python -m pytest tests/integration/ -v
-
-# Performance benchmarks
-python -m pytest tests/performance/ -v
-
-# All tests
-python -m pytest tests/ -v
-```
-
 ## 📚 Documentation
 
 - **[Web App Usage Guide](webapp/USAGE.md)**: Comprehensive guide for the web interface
 - **[Demo Script](demo/demo_script.md)**: Step-by-step presentation guide
 - **[Academic Report](report/academic_report.md)**: Complete research documentation
-- **[Source Code Documentation](src/)**: Well-documented source code with comprehensive docstrings
 
 ## 🎓 Educational Use
 
