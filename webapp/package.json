@@ -1,0 +1,23 @@
+{
+  "name": "svd-image-compression-webapp",
+  "version": "1.0.0",
+  "description": "SVD Image Compression Web Application with Tailwind CSS",
+  "main": "app.py",
+  "scripts": {
+    "build-css": "tailwindcss -i ./styles/input.css -o ./styles/output.css --watch",
+    "build-css-prod": "tailwindcss -i ./styles/input.css -o ./styles/output.css --minify"
+  },
+  "keywords": [
+    "svd",
+    "image-compression",
+    "streamlit",
+    "tailwindcss"
+  ],
+  "author": "SVD Image Compression Team",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}
