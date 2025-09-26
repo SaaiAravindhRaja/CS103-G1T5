@@ -1,0 +1,69 @@
+{
+  "generation_info": {
+    "timestamp": "2025-09-25T22:25:52.096647",
+    "total_images_processed": 3,
+    "categories": [
+      "portraits",
+      "landscapes",
+      "textures"
+    ],
+    "k_values_tested": [
+      "5",
+      "10",
+      "20",
+      "50"
+    ]
+  },
+  "summary_statistics": {
+    "avg_psnr_by_category": {
+      "landscapes": 40.985706064907276,
+      "portraits": 47.67040026542537,
+      "textures": 95.04835817516314
+    },
+    "avg_ssim_by_category": {
+      "landscapes": 0.9244496421196998,
+      "portraits": 0.985759633047131,
+      "textures": 0.8903280118123263
+    },
+    "avg_compression_ratio_by_category": {
+      "landscapes": 11.816920077972709,
+      "portraits": 11.816920077972709,
+      "textures": 11.816920077972709
+    }
+  },
+  "best_results": {
+    "highest_psnr": {
+      "category": "textures",
+      "image": "texture_geometric.png",
+      "k_value": 50,
+      "psnr": 289.4485164899563,
+      "ssim": 1.000000000000024,
+      "mse": 1.1353985911640445e-29,
+      "compression_ratio": 2.555009746588694,
+      "original_path": "demo/output/examples/textures/original_texture_geometric.png",
+      "compressed_path": "demo/output/examples/textures/compressed_k50_texture_geometric.png"
+    },
+    "highest_ssim": {
+      "category": "textures",
+      "image": "texture_geometric.png",
+      "k_value": 50,
+      "psnr": 289.4485164899563,
+      "ssim": 1.000000000000024,
+      "mse": 1.1353985911640445e-29,
+      "compression_ratio": 2.555009746588694,
+      "original_path": "demo/output/examples/textures/original_texture_geometric.png",
+      "compressed_path": "demo/output/examples/textures/compressed_k50_texture_geometric.png"
+    },
+    "best_compression": {
+      "category": "portraits",
+      "image": "portrait_geometric.png",
+      "k_value": 5,
+      "psnr": 36.38618113552398,
+      "ssim": 0.9677004249062929,
+      "mse": 0.0002298168599381444,
+      "compression_ratio": 25.55009746588694,
+      "original_path": "demo/output/examples/portraits/original_portrait_geometric.png",
+      "compressed_path": "demo/output/examples/portraits/compressed_k5_portrait_geometric.png"
+    }
+  }
+}
