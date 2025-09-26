@@ -1,0 +1,1 @@
+# Pages package for web application pages
