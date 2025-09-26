@@ -1,0 +1,63 @@
+{
+  "dataset_info": {
+    "name": "SVD Compression Sample Dataset",
+    "version": "1.0",
+    "created": "2025-09-25T22:23:58.171810",
+    "description": "Synthetic sample images for demonstrating SVD compression characteristics",
+    "total_images": 10
+  },
+  "categories": {
+    "portraits": {
+      "description": "Images with smooth gradients and low-frequency content, ideal for SVD compression",
+      "characteristics": [
+        "smooth gradients",
+        "low-frequency content",
+        "high compression ratios"
+      ],
+      "images": [
+        "portrait_smooth_gradient.png",
+        "portrait_geometric.png",
+        "portrait_minimalist.png"
+      ]
+    },
+    "landscapes": {
+      "description": "Images with mixed frequency content representing natural scenes",
+      "characteristics": [
+        "mixed frequencies",
+        "natural patterns",
+        "moderate compression"
+      ],
+      "images": [
+        "landscape_horizon.png",
+        "landscape_mountains.png",
+        "landscape_natural_pattern.png"
+      ]
+    },
+    "textures": {
+      "description": "Images with high-frequency content and complex patterns",
+      "characteristics": [
+        "high-frequency content",
+        "complex patterns",
+        "lower compression ratios"
+      ],
+      "images": [
+        "texture_checkerboard.png",
+        "texture_noise.png",
+        "texture_geometric.png",
+        "texture_interference.png"
+      ]
+    }
+  },
+  "technical_specs": {
+    "image_size": "256x256 pixels",
+    "color_mode": "RGB",
+    "file_format": "PNG",
+    "bit_depth": "8-bit per channel"
+  },
+  "usage_notes": [
+    "These images are designed to demonstrate different SVD compression characteristics",
+    "Portraits should show the best compression ratios with high quality",
+    "Textures should show the challenges of compressing high-frequency content",
+    "Landscapes provide intermediate examples between the extremes"
+  ]
+}
