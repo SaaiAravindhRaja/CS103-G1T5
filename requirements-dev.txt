@@ -1,0 +1,30 @@
+# Development dependencies for SVD Image Compression System
+
+# Testing framework
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+
+# Code quality and formatting
+black>=22.0.0
+flake8>=5.0.0
+mypy>=1.0.0
+isort>=5.10.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.2.0
+myst-parser>=0.18.0
+
+# Development tools
+pre-commit>=2.20.0
+jupyter>=1.0.0
+ipykernel>=6.15.0
+
+# Performance profiling
+memory-profiler>=0.60.0
+line-profiler>=4.0.0
+
+# Additional testing utilities
+hypothesis>=6.50.0  # Property-based testing
+factory-boy>=3.2.0  # Test data generation
